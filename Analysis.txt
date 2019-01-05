@@ -1,0 +1,27 @@
+Analysis on the following questions:
+
+1. How many employees came today?
+	First, operation readEmployees() is performed to read the employee id from the input file.
+	This operation builds a Binary Tree using 2 methods, addNode and increaseCount. If a node already
+	exists in tree, frequency is increased by 1 else a new node is added.
+	
+	Complexity for n Inputs: O(n)
+
+2. Did a particular employee come today?
+	This operation uses searching(Binary) of Binary Tree with a time complexity of O(log n).
+
+3. How often did an employee enter into the office?
+	This operation uses Binary Search of the Tree and then returning the Calculated Frequency with the
+	time complexity of O(log n).
+		
+4. Which employee moves out of office most number of times?
+	This operation uses traversing through the weighted binary tree and returing the node with highest
+	frequency. Traversal used is pre-order traversal.
+	
+	Complexity for n inputs: O(n)
+	
+5. Who all came within a range of IDs, and how often they entered?
+	This operation uses traversing through the weighted binary tree and returing the nodes in range with
+	frequency. Traversal used is pre-order traversal.
+	
+	Complexity for n inputs: O(n)
